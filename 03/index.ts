@@ -19,21 +19,28 @@ const arr8: [string, number, boolean] = ['bt', 12, true]
 // const [name, age, male, other] = arr8
 
 interface IDescription {
-  readonly name: string;
-  age: number;
-  male?: boolean;
+  readonly name: string
+  age: number
+  male?: boolean
   func?: Function
 }
 
 const obj1: IDescription = {
   name: 'bt',
   age: 28,
-  male: true
+  male: true,
 }
 
 obj1.male = false
-obj1.func()
+// obj1.func()
 // obj1.name = 'brad'
 
 const obj10: {} = 'bt'
 // obj10.name = 'brad'
+
+const test1: number = null
+const test2: number = undefined
+
+void (function iif() {
+  console.log('invoked!')
+})()
